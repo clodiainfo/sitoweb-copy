@@ -171,6 +171,7 @@ textarea.form-control {
 
 .site-hero {
   background-size: cover;
+  background-position: center center;
   height: 100vh;
   min-height: 700px;
   width: 100%;
@@ -187,7 +188,7 @@ textarea.form-control {
 }
 
 .site-hero.overlay:before {
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.15);
   content: "";
   position: absolute;
   height: 100vh;
@@ -210,6 +211,10 @@ textarea.form-control {
   color: #fff;
   line-height: 1;
   font-weight: bold;
+}
+
+.home-hero .site-hero-inner .heading {
+  margin-top: 400px;
 }
 
 @media (max-width: 991.98px) {
@@ -730,7 +735,7 @@ textarea.form-control {
 }
 
 .footer-section {
-  background: #1a1a1a;
+  background-color: #008b8b !important;
   color: #fff;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -935,30 +940,77 @@ textarea.form-control {
   box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
 }
 
-.btn-gradient-elegant {
-  background: linear-gradient(90deg, #003366 0%, #4f8edc 60%, #b3e0ff 100%);
-  color: #fff;
-  border: none;
-  border-radius: 50px;
-  font-weight: bold;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: background 0.3s, color 0.3s;
-}
-.btn-gradient-elegant:hover, .btn-gradient-elegant:focus {
-  background: linear-gradient(90deg, #003366 0%, #4f8edc 80%, #b3e0ff 100%);
-  color: #003366;
+.btn-gradient-elegant, .custom-btn-white {
+  --color: #008b8b;
+  --border-color: #fff;
+  --text-color: #fff;
+  --hover-text-color: #002b2b;
+  font-family: inherit;
+  display: inline-block;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid var(--border-color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--text-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 1.5em;
+  min-width: 10em;
+  background: transparent !important;
 }
 
-.custom-btn-white {
-  background: #fff !important;
-  color: #000 !important;
-  border: none !important;
-  font-weight: bold;
-  box-shadow: 0 4px 16px 0 rgba(0, 51, 102, 0.10);
-  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+/* Stile per i pulsanti nelle altre pagine */
+body:not(.home-page) .btn-gradient-elegant,
+body:not(.home-page) .custom-btn-white {
+  --color: #008b8b;
+  --border-color: #008b8b;
+  --text-color: #008b8b;
+  --hover-text-color: #fff;
+  border: 2px solid var(--border-color);
+  color: var(--text-color);
 }
-.custom-btn-white:hover, .custom-btn-white:focus {
-  background: #b3e0ff !important;
-  color: #003366 !important;
-  box-shadow: 0 8px 24px 0 rgba(0, 51, 102, 0.18);
+
+body:not(.home-page) .btn-gradient-elegant:hover,
+body:not(.home-page) .custom-btn-white:hover {
+  color: var(--hover-text-color);
+}
+
+body:not(.home-page) .btn-gradient-elegant:before,
+body:not(.home-page) .custom-btn-white:before {
+  background: var(--color);
+}
+
+.btn-gradient-elegant:before, .custom-btn-white:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: -100%;
+  transition: all 0.5s ease;
+}
+
+.btn-gradient-elegant:hover, .custom-btn-white:hover {
+  color: var(--hover-text-color);
+  border-color: var(--color);
+}
+
+.btn-gradient-elegant:hover:before, .custom-btn-white:hover:before {
+  right: 0;
+}
+
+.btn-gradient-elegant:active:before, .custom-btn-white:active:before {
+  background: #006666;
+  transition: background 0s;
 }

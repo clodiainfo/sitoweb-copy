@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee:200,300,400|Playfair+Display:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -77,30 +78,35 @@
     </header>
     <!-- END head -->
 
-    <section class="site-hero overlay page-inside" style="background-image: url(img/hero_2.jpg)">
+    <section class="site-hero overlay page-inside" style="background-image: url(img/hero_2.jpg);">
       <div class="container">
         <div class="row site-hero-inner justify-content-center align-items-center">
           <div class="col-md-10 text-center">
-            <h1 class="heading" data-aos="fade-up">Contattaci</h1>
+            <h1 class="heading" data-aos="fade-up" style="font-family: 'Dancing Script', cursive, 'Playfair Display', times, serif; font-style: italic; font-size: 80px; color: white;">Contatti</h1>
           </div>
         </div>
-        <!-- <a href="#" class="scroll-down">Scroll Down</a> -->
       </div>
+      <style>
+        .site-hero.overlay:before {
+          background: rgba(0, 25, 51, 0.45) !important;
+          filter: brightness(1.2);
+        }
+      </style>
     </section>
     <!-- END section -->
 
     
-    <section class="section bg-primary contact-section">
+    <section class="section contact-section bg-pattern">
       <div class="container">
         <div class="row">
           <div class="col-md-7">
             
-            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="bg-white p-md-5 p-4 mb-5 " style="margin-top: -150px;">
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="p-md-5 p-4 mb-5" style="margin-top: -150px; background-color: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
               <input type="hidden" name="access_key" value="0fb05094-b1e0-451d-a1b6-39475b2acfb9">
               <input type="hidden" name="subject" value="Nuova richiesta dal sito Clodia Minor">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <label for="name">Nome e Cognome</label>
+                  <label for="name">Nome/Cognome</label>
                   <input type="text" name="Nome e Cognome" id="name" class="form-control" required>
                 </div>
                 <div class="col-md-6 form-group">
@@ -136,35 +142,34 @@
           </div>
           <div class="col-md-5">
             <div class="row">
-              <div class="col-md-12 ml-auto contact-info">
-                <h3 class="mb-3" style="font-family: 'Dancing Script', cursive, 'Playfair Display', times, serif; font-size: 2rem; color: #003366;">Appartamenti Clodia Minor</h3>
-                <div style="margin-bottom: 18px; display: flex; align-items: flex-start;">
-                  <span class="fa fa-map-marker" style="color:#003366; margin-right:10px; margin-top: 3px;"></span>
+              <div class="col-md-12 ml-auto contact-info" style="color: #001a33; padding: 2rem; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <h3 class="mb-4" style="font-family: 'Dancing Script', cursive, 'Playfair Display', times, serif; font-size: 2.2rem; color: #001a33; text-align: center; border-bottom: 2px solid #001a33; padding-bottom: 1rem;">Appartamenti Clodia Minor</h3>
+                <div style="margin-bottom: 25px; display: flex; align-items: flex-start;">
+                  <span class="fa fa-map-marker" style="color:#001a33; margin-right:15px; margin-top: 5px; font-size: 1.4em;"></span>
                   <div>
-                    <a href="https://www.google.it/maps/place/Via+Sebastiano+Venier,+20,+30015+Chioggia+VE/@45.1975726,12.3007254,17z/data=!3m1!4b1!4m6!3m5!1s0x477e991ccc8d6c4d:0xadaa1372ad734e7b!8m2!3d45.1975726!4d12.3007254!16s%2Fg%2F11c25xbv52?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="address-link" style="font-family: 'Dancing Script', cursive, 'Playfair Display', times, serif; font-size: 1.35rem; color: #0077b6; font-weight: bold; letter-spacing: 0.5px; transition: color 0.3s, text-shadow 0.3s; text-decoration: underline;">
+                    <a href="https://www.google.it/maps/place/Via+Sebastiano+Venier,+20,+30015+Chioggia+VE/@45.1975726,12.3007254,17z/data=!3m1!4b1!4m6!3m5!1s0x477e991ccc8d6c4d:0xadaa1372ad734e7b!8m2!3d45.1975726!4d12.3007254!16s%2Fg%2F11c25xbv52?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="font-family: 'Playfair Display', serif; font-size: 1.3rem; color: #001a33; letter-spacing: 0.5px; line-height: 1.6;">
                       Viale Sebastiano Venier, 20<br>30015 Chioggia (VE)
                     </a>
                   </div>
                 </div>
-                <div style="margin-bottom: 18px; display: flex; align-items: flex-start;">
-                  <span class="fa fa-phone" style="color:#003366; margin-right:10px; margin-top: 3px;"></span>
+                <div style="margin-bottom: 25px; display: flex; align-items: flex-start;">
+                  <span class="fa fa-phone" style="color:#001a33; margin-right:15px; margin-top: 5px; font-size: 1.4em;"></span>
                   <div>
-                    Telefoni:<br>
-                    <a href="tel:+39041491274" style="color:#003366; font-weight:bold; text-decoration:underline;">+39 041 491274<br>328 0747215</a>
+                    <span style="font-family: 'Playfair Display', serif; font-size: 1.3rem; color: #001a33;">Telefoni:</span><br>
+                    <a href="tel:+39041491274" style="color:#001a33; font-family: 'Playfair Display', serif; font-size: 1.3rem; line-height: 1.6;">+39 041 491274<br>+39 328 0747215</a>
                   </div>
                 </div>
-                <div style="margin-bottom: 18px; display: flex; align-items: flex-start;">
-                  <span class="fa fa-envelope" style="color:#003366; margin-right:10px; margin-top: 3px;"></span>
+                <div style="margin-bottom: 25px; display: flex; align-items: flex-start;">
+                  <span class="fa fa-envelope" style="color:#001a33; margin-right:15px; margin-top: 5px; font-size: 1.4em;"></span>
                   <div>
-                    Email:<br>
-                    <a href="mailto:clodiaminor.info@gmail.com" style="color:#003366; font-weight:bold; text-decoration:underline;">clodiaminor.info@gmail.com</a>
+                    <span style="font-family: 'Playfair Display', serif; font-size: 1.3rem; color: #001a33;">Email:</span><br>
+                    <a href="mailto:clodiaminor.info@gmail.com" style="color:#001a33; font-family: 'Playfair Display', serif; font-size: 1.3rem; line-height: 1.6;">clodiaminor.info@gmail.com</a>
                   </div>
                 </div>
-                <div style="display: flex; align-items: flex-start; margin-top: 18px;">
-                  <span class="fa fa-whatsapp" style="color:#128C7E; margin-right:10px; margin-top: 3px; font-size: 1.3em;"></span>
+                <div style="display: flex; align-items: flex-start; margin-top: 25px; padding-top: 20px; border-top: 1px solid #eee;">
+                  <span class="fa fa-whatsapp" style="color:#128C7E; margin-right:15px; margin-top: 5px; font-size: 1.4em;"></span>
                   <div>
-                    <span style="font-weight:bold; color:#128C7E;">Chatta su WhatsApp:</span><br>
-                    <a href="https://wa.me/393296849859" target="_blank" style="color:#128C7E; font-weight:bold; text-decoration:underline; font-size:1.08rem;">Invia un messaggio WhatsApp</a>
+                    <a href="https://wa.me/393296849859" target="_blank" style="color:#128C7E; font-family: 'Playfair Display', serif; font-size: 1.3rem; line-height: 1.6;">Scrivici su WhatsApp</a>
                   </div>
                 </div>
               </div>
@@ -173,46 +178,42 @@
         </div>
       </div>
       <!-- Testo informativo orari visita -->
-      <div style="text-align: center; color: #111; font-size: 0.95rem; margin: 24px 0 0 0;">
+      <div style="text-align: center; color: #001a33; font-size: 1.2rem; margin: 24px 0 0 0;">
         <span style="font-weight: bold;">Contattaci</span> senza impegno per maggiori informazioni per un preventivo personalizzato <br>
         <span style="font-weight: bold;">Per farci visita:</span> Febbraio-Aprile ogni giorno con preavviso, Maggio-Settembre ogni giorno dalle 10:00 alle 20:00
       </div>
     </section>
     
-    <footer class="section footer-section">
+    <footer class="section footer-section bg-pattern" style="background: #001a33; color: white; padding-top: 10px; padding-bottom: 10px;">
       <div class="container">
-        <div class="row mb-4">
-          <div class="col-md-3 mb-5">
+        <div class="row mb-2">
+          <div class="col-md-3 mb-3">
             <ul class="list-unstyled link">
-              <li><a href="about.html">FAQ</a></li>
-              <li><a href="https://www.termsfeed.com/live/c1cf9501-2e91-4ba8-89c2-b205d07258f9">Privacy Policy</a></li>
-
+              <li><a href="about.html" style="color: white;">FAQ</a></li>
+              <li><a href="https://www.termsfeed.com/live/c1cf9501-2e91-4ba8-89c2-b205d07258f9" style="color: white;">Privacy Policy</a></li>
             </ul>
           </div>
-          <div class="col-md-3 mb-5">
+          <div class="col-md-3 mb-3">
             <ul class="list-unstyled link">
-              <li><a href="contact.html">Contattaci</a></li>
-              <li><a href="hotel.html">Appartamenti</a></li>
+              <li><a href="contact.html" style="color: white;">Contattaci</a></li>
+              <li><a href="hotel.html" style="color: white;">Appartamenti</a></li>
             </ul>
           </div>
-          <div class="col-md-3 mb-5 pr-md-5 contact-info">
-            <p><span class="d-block">Indirizzo:</span> <span> Viale Sebastiano Venier, N 20 <br> Chioggia VE 30015</span></p>
-            <p><span class="d-block">P.Iva:</span> <span> Alessandra s.a.s - 02705940274</span></p>
-
+          <div class="col-md-3 mb-3 pr-md-5 contact-info">
+            <p style="color: white; margin-bottom: 5px;"><span class="d-block" style="color: white;">Indirizzo:</span> <span> Viale Sebastiano Venier, N 20 <br> Chioggia VE 30015</span></p>
+            <p style="color: white; margin-bottom: 5px;"><span class="d-block" style="color: white;">P.Iva:</span> <span> Alessandra s.a.s - 02705940274</span></p>
           </div>
-          <div class="col-md-3 mb-5 pr-md-5 contact-info">
-            <p><span class="d-block">Telefono:</span> <span> (+39) 328 074 7215<br>(+39) 041 491 274</span></p>
-            <p><span class="d-block">Email:</span> <span> clodiaminor.info@gmail.com</span></p>
-
+          <div class="col-md-3 mb-3 pr-md-5 contact-info">
+            <p style="color: white; margin-bottom: 5px;"><span class="d-block" style="color: white;">Telefono:</span> <span> (+39) 328 074 7215<br>(+39) 041 491 274</span></p>
+            <p style="color: white; margin-bottom: 5px;"><span class="d-block" style="color: white;">Email:</span> <span> clodiaminor.info@gmail.com</span></p>
           </div>
         </div>
-        <div class="row bordertop pt-5">
-          <p class="col-md-6 text-left">© All Rights Reserved To SIF</p>
-            
-          <p class="col-md-6 text-right social">
-            <a href="https://www.tripadvisor.it/Hotel_Review-g194738-d6599670-Reviews-Appartamenti_Clodia_Minor-Chioggia_Veneto.html?m=19905"><span class="fa fa-tripadvisor"></span></a>
-            <a href="https://www.facebook.com/clodiaminorflats/?locale=it_IT"><span class="fa fa-facebook"></span></a>
-            <a href="https://www.instagram.com/clodiaminor?igsh=ZTRtb3BweGVtNGJh"><span> Insta</span></a>
+        <div class="row bordertop pt-3">
+          <p class="col-md-6 text-left" style="color: white; margin-bottom: 0;">© All Rights Reserved To SIF</p>
+          <p class="col-md-6 text-right social" style="margin-bottom: 0;">
+            <a href="https://www.tripadvisor.it/Hotel_Review-g194738-d6599670-Reviews-Appartamenti_Clodia_Minor-Chioggia_Veneto.html?m=19905" style="color: white;"><span class="fa fa-tripadvisor"></span></a>
+            <a href="https://www.facebook.com/clodiaminorflats/?locale=it_IT" style="color: white;"><span class="fa fa-facebook"></span></a>
+            <a href="https://www.instagram.com/clodiaminor?igsh=ZTRtb3BweGVtNGJh" style="color: white;"><span> Insta</span></a>
           </p>
         </div>
       </div>
@@ -249,6 +250,12 @@
     .address-link:hover, .address-link:focus {
       color: #003366 !important;
       text-shadow: 0 2px 8px #b3e0ff;
+    }
+
+    /* Form field focus styles */
+    .form-control:focus {
+      border-color: #0077b6 !important;
+      box-shadow: 0 0 0 0.2rem rgba(0, 119, 182, 0.25) !important;
     }
     </style>
   </body>
