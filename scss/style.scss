@@ -478,9 +478,12 @@ textarea.form-control {
 
 
 	.owl-item {
-		opacity: .4;
+		opacity: 0.5;
+		transform: scale(0.9);
+		transition: all 0.3s ease;
 		&.active {
 			opacity: 1;
+			transform: scale(1);
 		}
 	}
 	

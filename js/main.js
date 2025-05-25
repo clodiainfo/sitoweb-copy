@@ -48,21 +48,30 @@
     animateIn: 'fadeIn',
     nav:true,
     autoplayHoverPause: true,
-    items: 1,
     autoheight: true,
+    items: 1,
+    center: true,
+    stagePadding: 0,
     navText : ["<span class='ion-chevron-left'></span>","<span class='ion-chevron-right'></span>"],
     responsive:{
       0:{
         items:1,
-        nav:false
+        nav:false,
+        margin: 10,
+        stagePadding: 0
       },
       600:{
         items:1,
-        nav:false
+        nav:false,
+        margin: 10,
+        stagePadding: 0
       },
       1000:{
         items:1,
-        nav:true
+        nav:true,
+        loop:false,
+        margin: 10,
+        stagePadding: 0
       }
     }
 	});

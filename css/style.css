@@ -9,14 +9,14 @@ body {
 
 ::-moz-selection {
   color: #fff;
-  background: #0dc4dd;
+  background: #2DE1C2;
 }
 #ciao{
   background-image: "/img/round.png";
 }
 ::selection {
   color: #fff;
-  background: #0dc4dd;
+  background: #2DE1C2;
 }
 
 a {
@@ -129,7 +129,7 @@ textarea.form-control {
   height: 50%;
   width: 0%;
   z-index: -1;
-  background: #0dc4dd;
+  background: #2DE1C2;
   -webkit-transition: .3s all ease-in-out;
   -o-transition: .3s all ease-in-out;
   transition: .3s all ease-in-out;
@@ -349,18 +349,30 @@ textarea.form-control {
   margin-bottom: 30px;
 }
 
-.visit-section .visit a {
-  color: #000;
-}
-
-.visit-section .visit a:hover {
-  color: #0dc4dd;
+.visit-section .visit {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px !important;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+  overflow: hidden;
 }
 
 .visit-section .visit img {
   -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 15px;
+  border-radius: 10px !important;
+  width: 100%;
+  height: auto;
+}
+
+.visit-section .visit a {
+  color: #000;
+  display: block;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .visit-section .visit h3 {
@@ -475,11 +487,15 @@ textarea.form-control {
   transition: .3s all ease;
   -webkit-box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
+  border-radius: 12px !important;
+  padding: 12px;
+  margin-bottom: 15px;
 }
 
 .post .media-custom:hover, .post .media-custom:focus {
   -webkit-box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
 }
 
 .post .media-custom a {
@@ -491,17 +507,27 @@ textarea.form-control {
 }
 
 .post .media-custom .media-body {
-  padding: 10px 30px;
+  padding: 5px 10px;
 }
 
 .post .media-custom h2 {
-  font-size: 26px;
+  font-size: 1.2rem;
+  margin: 0;
 }
 
 .media-custom .meta-post {
   color: #ced4da;
   text-transform: uppercase;
   letter-spacing: .1em;
+}
+
+.media-custom .fa {
+  font-size: 2rem;
+  color: #008b8b !important;
+}
+
+.media-custom:hover .fa {
+  color: #006666 !important;
 }
 
 .owl-carousel .owl-item {
@@ -1013,4 +1039,30 @@ body:not(.home-page) .custom-btn-white:before {
 .btn-gradient-elegant:active:before, .custom-btn-white:active:before {
   background: #006666;
   transition: background 0s;
+}
+
+.hotel-page .visit-section .visit {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px !important;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.hotel-page .visit-section .visit img {
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+  border-radius: 10px !important;
+  width: 100%;
+  height: auto;
+}
+
+.hotel-page .visit-section .visit a {
+  color: #000;
+  display: block;
+  border-radius: 15px;
+  overflow: hidden;
 }
